@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="com.example.nelli.posters2.infrastructures.EditableInfrastrcuturesFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".infrastructures.EditableInfrastrcuturesFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button android:id="@+id/add_infrastructure_button"
+            style="@style/Button.Accent"
+            android:layout_marginLeft="4dp"
+            android:text="Добавить инфраструктуру" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/screenView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateEventFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/colorPrimaryLight"
+        android:padding="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/event_title_parent"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Заголовок:"
+                android:layout_width="wrap_content"
+                style="@style/TextView" />
+            <EditText
+                android:id="@+id/event_title"
+                style="@style/EditText.White"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:padding="4dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/event_info_parent"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Информация о событии:"
+                style="@style/TextView" />
+            <EditText
+                android:id="@+id/event_info"
+                style="@style/EditText.White"
+                android:inputType="textMultiLine"
+                android:layout_marginTop="8dp"
+                android:lines="5" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/event_place_parent"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Название места:"
+                android:layout_width="wrap_content"
+                style="@style/TextView" />
+            <EditText
+                android:id="@+id/event_place"
+                style="@style/EditText.White"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:padding="4dp" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/event_date"
+            style="@style/Button.Dark"
+            android:layout_width="match_parent"
+            android:text="Выбрать дату" />
+        <TextView
+            android:text="Выберите место на карте:"
+            style="@style/TextView"
+            android:layout_marginTop="8dp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+            <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:map="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MapsActivity" />
+            <ImageView
+                android:id="@+id/transparent_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@android:color/transparent" />
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/event_image_parent"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/event_image"
+                style="@style/Button.Dark"
+                android:text="Выбрать изображение" />
+            <ImageView
+                android:id="@+id/event_image_view"
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/event_cost_parent"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Стоимость входа:"
+                style="@style/TextView"
+                android:layout_width="wrap_content" />
+            <EditText
+                android:id="@+id/event_cost"
+                style="@style/EditText.White"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:inputType="number"
+                android:padding="4dp" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/save_event_btn"
+                style="@style/Button.Accent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:text="Добавить" />
+            <Button
+                android:id="@+id/close_event_canvas_btn"
+                style="@style/Button.Accent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="Отмена" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

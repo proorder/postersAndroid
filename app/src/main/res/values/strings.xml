@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Узнать события города</string>
+    <string name="title_activity_admin">Инфраструктуры</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_subtitle_admin">Суперпользователь</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Настройки</string>
+
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_user">События города</string>
+    <string name="nav_header_subtitle_user">Пользователь</string>
+    <string name="title_activity_manager">ManagerActivity</string>
+    <string name="nav_header_subtitle_manager">Менеджер</string>
+</resources>

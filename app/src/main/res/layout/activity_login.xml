@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/rounded_rect_white"
+        style="@style/BasicCanvas.Wrap">
+        <TextView style="@style/TextView" android:text="Логин:" />
+        <EditText style="@style/EditText" android:id="@+id/login" />
+        <TextView style="@style/TextView" android:text="Пароль:" />
+        <EditText style="@style/EditText" android:id="@+id/password" android:inputType="textPassword" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button style="@style/Button.Accent"
+                android:id="@+id/login_button"
+                android:layout_centerHorizontal="true"
+                android:text="Войти" />
+        </RelativeLayout>
+        <TextView
+            android:textAlignment="center"
+            android:text="ИЛИ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button style="@style/Button.Accent"
+                android:id="@+id/registration_button"
+                android:layout_centerHorizontal="true"
+                android:text="Зарегистрироваться" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

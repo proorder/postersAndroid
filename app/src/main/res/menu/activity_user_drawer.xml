@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_event"
+            android:checked="true"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Все события" />
+        <item
+            android:id="@+id/nav_my_event"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Мои события" />
+        <item
+            android:id="@+id/nav_infrastructure"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Инфраструктуры" />
+        <item
+            android:id="@+id/nav_exit"
+            android:title="Выход" />
+    </group>
+
+</menu>
